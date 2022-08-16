@@ -10,7 +10,7 @@
       </th>
       <th nzCustomFilter>
         id
-        <nz-filter-trigger [(nzVisible)]="visible" [nzActive]="searchValue.length > 0" [nzDropdownMenu]="menu">
+        <nz-filter-trigger [(nzVisible)]="visible1" [nzActive]="searchValue.length > 0" [nzDropdownMenu]="menu">
           <i nz-icon nzType="search"></i>
         </nz-filter-trigger>
       </th>
@@ -46,8 +46,8 @@
   <div class="ant-table-filter-dropdown">
     <div class="search-box">
       <input type="text" nz-input placeholder="Search name" [(ngModel)]="searchValue" />
-      <button nz-button nzSize="small" nzType="primary" (click)="search()" class="search-button">Search</button>
-      <button nz-button nzSize="small" (click)="reset()">Reset</button>
+      <button nz-button nzSize="small" nzType="primary" (click)="search1()" class="search-button">Search</button>
+      <button nz-button nzSize="small" (click)="reset1()">Reset</button>
     </div>
   </div>
 </nz-dropdown-menu>

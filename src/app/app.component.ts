@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   content?: string;
   searchValue = '';
   visible = false;
+  visible1 = false;
   donner :Test[] = [];
   
   listOfDisplayData : any;
@@ -25,6 +26,9 @@ export class AppComponent implements OnInit {
     this.visible = false;
     this.listOfDisplayData = this.donner.filter((item: Test) => item.id.toString().indexOf(this.searchValue) !== -1);
   }
+
+  reset1(){}
+  search1(){}
 
 getall():void{
   this.apiser.getAll()
